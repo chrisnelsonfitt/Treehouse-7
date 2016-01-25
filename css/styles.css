@@ -31,37 +31,61 @@ p {
 
 .hlight {
   color: #e68a00; }
-video .mejs-skin{
-    width:100%; !important
-}
+
 .mejs-skin .mejs-controls {
   background: none;
-  height: 40px;
+  height: 26px;
   width: 100%; }
   .mejs-skin .mejs-controls .mejs-button {
-    float: right; }
+    float: right;
+    position: absolute;
+    z-index: 2; }
   .mejs-skin .mejs-controls .mejs-playpause-button {
-    float: left; }
+    left: 10px;
+    bottom: 15px;
+    width: 10px;
+    height: 10px;
+    padding: 2px;
+    cursor: pointer; }
+  .mejs-skin .mejs-controls .mejs-caption-selector {
+    background: none; }
+  .mejs-skin .mejs-controls .mejs-fullscreen-button {
+    right: 5px;
+    bottom: 1px; }
+  .mejs-skin .mejs-controls .mejs-volume-button {
+    right: 25px;
+    bottom: -1px; }
   .mejs-skin .mejs-controls .mejs-captions-selector {
     position: absolute;
     right: -25px; }
+  .mejs-skin .mejs-controls .mejs-captions-button {
+    right: 50px;
+    bottom: -1px; }
+  .mejs-skin .mejs-controls .mejs-time {
+    position: absolute;
+    left: 40px; }
   .mejs-skin .mejs-controls .mejs-time-rail {
     position: absolute;
-    bottom: 10px;
-    height: 5px; }
+    bottom: 31px;
+    height: 5px;
+    z-index: 1; }
   .mejs-skin .mejs-controls .mejs-time-loaded {
-    height: 6px;
+    height: 7px;
+    border-radius: 0px;
     background: rgba(205, 205, 205, 0.22); }
   .mejs-skin .mejs-controls .mejs-time-total {
-    height: 6px;
+    height: 7px;
+    border-radius: 0px;
     background: rgba(5, 5, 5, 0.7); }
   .mejs-skin .mejs-controls .mejs-time-buffering {
-    height: 6px; }
+    height: 7px;
+    border-radius: 0px; }
   .mejs-skin .mejs-controls .mejs-time-handle {
-    height: 6px; }
+    height: 7px;
+    border-radius: 0px; }
   .mejs-skin .mejs-controls .mejs-time-current {
-    height: 6px;
+    height: 7px;
+    border-radius: 0px;
     background: #ff9900; }
-  .mejs-skin .mejs-controls .mejs-time-float {
-    visibility: hidden; }
 
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,75 @@
+
+.mejs-skin{
+   
+    .mejs-controls {
+        background: none;
+        height: 26px;
+        width:100%;
+        
+            .mejs-button{
+                float:right;
+                position: absolute;
+                z-index: 2; }
+            .mejs-playpause-button{
+                left:10px;
+                bottom:15px;
+                width:10px;
+                height: 10px;
+                padding:2px;
+                cursor: pointer;}
+            .mejs-caption-selector {
+                background:none;}
+    
+           .mejs-fullscreen-button{
+               right:5px;
+               bottom:1px;
+               }
+            .mejs-volume-button {
+                right:25px;
+                bottom:-1px;}
+            .mejs-captions-selector {
+                position: $ab;
+                right:-25px;    
+            } 
+            .mejs-captions-button{
+                right:50px;
+                bottom:-1px;
+            }
+           
+            .mejs-time{
+                position: $ab;
+                left:40px;  
+            }
+            .mejs-time-rail {
+                position: $ab;
+                bottom:31px; 
+                height: 5px;
+                z-index: 1;
+            }
+        .mejs-time-loaded{
+            @include player-height;
+            background:$tgrey;
+            
+        }
+        .mejs-time-total{
+            @include player-height;
+            background:$tblack;
+            
+        }
+        .mejs-time-buffering{ 
+            @include player-height;
+        }
+        .mejs-time-handle{
+            @include player-height;
+          
+        }
+        .mejs-time-current{
+            @include player-height;
+            background:$Burnt_Sienna;
+        }
+      
+    
+}
+
+}
+
