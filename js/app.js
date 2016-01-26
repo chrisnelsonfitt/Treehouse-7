@@ -12,7 +12,7 @@ $('audio,video').mediaelementplayer({success: function (player, node) {  "use st
 var video = document.getElementsByTagName("video")[0];
 
 //Hide and Show Buttons
-//$('.mejs-button, .mejs-currenttime, .mejs-duration , .mejs-time span').css("display", "none");
+
 $('.mejs-skin, .mejs-time-rail').mouseenter(function () {"use strict"; $('.mejs-button , .mejs-currenttime , .mejs-time span').css("display", "block"); });
 $('.mejs-skin').mouseleave(function () { "use strict"; $('.mejs-button , .mejs-currenttime, .mejs-time span').css("display", "none"); });
 
