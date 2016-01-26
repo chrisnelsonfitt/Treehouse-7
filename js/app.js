@@ -7,8 +7,8 @@ var video = document.getElementsByTagName("video")[0];
 
 //Hide and Show Buttons
 
-$('.mejs-skin, .mejs-time-rail').mouseenter(function () {"use strict"; $('.mejs-button , .mejs-currenttime , .mejs-time span').css("display", "block"); });
-$('.mejs-skin').mouseleave(function () { "use strict"; $('.mejs-button , .mejs-currenttime, .mejs-time span').css("display", "none"); });
+$('.mejs-skin, .mejs-time-rail').mouseenter(function () {"use strict"; $('.mejs-button , .mejs-currenttime , .mejs-time span').css("display", "block");   $(".mejs-time-rail").css("bottom", "31px"); });
+$('.mejs-skin').mouseleave(function () { "use strict"; $('.mejs-button , .mejs-currenttime, .mejs-time span').css("display", "none"); $(".mejs-time-rail").css("bottom", "11px");  });
 
 //Remove script highlight on click
 $("p , button , .mejs-time-rail ").click(function () { "use strict"; $('p').removeClass("hlight"); });
