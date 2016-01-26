@@ -38,7 +38,7 @@
                 bottom:0px;
         }
         
-                @-moz-document url-prefix() {
+            @-moz-document url-prefix() {
             .mejs-play{
                 @include button-m;
                 background: url(..//icons/play-icon.png) no-repeat;
@@ -71,7 +71,6 @@
 
 }
 
-      
             .mejs-caption-selector {
                 background:none;}
 
