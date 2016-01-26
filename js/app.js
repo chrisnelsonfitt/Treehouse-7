@@ -20,7 +20,7 @@ $('.mejs-skin').mouseleave(function () { "use strict"; $('.mejs-button , .mejs-c
 $("p , button , .mejs-time-rail ").click(function () { "use strict"; $('p').removeClass("hlight"); });
 
 //Highlight text based on position of video
-video.addEventListener("timeupdate", function () { "use strict"; if (video.currentTime < 7.53) {$("#1").addClass("hlight"); } else if (video.currentTime <= 17.9) { $("#2").addClass("hlight");
+video.addEventListener("timeupdate", function () { "use strict"; if (video.currentTime < 8.255) {$("#1").addClass("hlight"); } else if (video.currentTime <= 17.9) { $("#2").addClass("hlight");
         $("#1").removeClass("hlight");
     } else if (video.currentTime <= 32) { $("#3").addClass("hlight");
          $("#2").removeClass("hlight"); } else if (video.currentTime <= 42) { $("#4").addClass("hlight");
@@ -30,8 +30,8 @@ video.addEventListener("timeupdate", function () { "use strict"; if (video.curre
 
 //link video with paragraph   
 $("#1").click(function () { "use strict"; video.currentTime = 0; video.play(); });
-$("#2").click(function () { "use strict"; video.currentTime = 8; video.play(); });
-$("#3").click(function () { "use strict"; video.currentTime = 17; video.play(); });
-$("#4").click(function () { "use strict"; video.currentTime = 32; video.play(); });
-$("#5").click(function () { "use strict"; video.currentTime = 42; video.play(); });
-$("#6").click(function () { "use strict"; video.currentTime = 53; video.play(); });
+$("#2").click(function () { "use strict"; video.currentTime = 8.255; video.play(); });
+$("#3").click(function () { "use strict"; video.currentTime = 17.940; video.play(); });
+$("#4").click(function () { "use strict"; video.currentTime = 32.100; video.play(); });
+$("#5").click(function () { "use strict"; video.currentTime = 42.350; video.play(); });
+$("#6").click(function () { "use strict"; video.currentTime = 53.760; video.play(); });
