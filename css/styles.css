@@ -16,7 +16,7 @@ main {
   margin-top: 30px; }
 
 h1 {
-  font-weight: 800px;
+  font-weight: 800;
   margin-left: 50px; }
 
 p {
@@ -42,19 +42,67 @@ p {
     z-index: 2; }
   .mejs-skin .mejs-controls .mejs-playpause-button {
     left: 10px;
-    bottom: 15px;
+    bottom: 1px;
     width: 10px;
     height: 10px;
     padding: 2px;
     cursor: pointer; }
-  .mejs-skin .mejs-controls .mejs-caption-selector {
-    background: none; }
+  .mejs-skin .mejs-controls .mejs-play {
+    content: url("..//icons/play-icon.png");
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    padding: 4px;
+    bottom: 0px; }
+  .mejs-skin .mejs-controls .mejs-pause {
+    content: url("..//icons/pause-icon.png");
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    padding: 4px;
+    bottom: 0px; }
   .mejs-skin .mejs-controls .mejs-fullscreen-button {
+    content: url("..//icons/fullscreen-icon.png");
     right: 5px;
-    bottom: 1px; }
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    padding: 4px;
+    bottom: 0px;
+    bottom: 2px; }
   .mejs-skin .mejs-controls .mejs-volume-button {
     right: 25px;
-    bottom: -1px; }
+    bottom: 0px; }
+@-moz-document url-prefix() {
+  .mejs-skin .mejs-controls .mejs-play {
+    cursor: pointer;
+    position: absolute;
+    bottom: -2px;
+    visibility: visible;
+    background: url(..//icons/play-icon.png) no-repeat;
+    background-size: contain;
+    width: 1px; }
+    .mejs-skin .mejs-controls .mejs-play button {
+      display: none; }
+  .mejs-skin .mejs-controls .mejs-pause {
+    background: url(..//icons/pause-icon.png) no-repeat;
+    width: 1px;
+    background-size: contain;
+    cursor: pointer;
+    position: absolute;
+    bottom: -2px;
+    visibility: visible; }
+    .mejs-skin .mejs-controls .mejs-pause button {
+      display: none; }
+  .mejs-skin .mejs-controls .mejs-fullscreen-button {
+    background: url(..//icons/fullscreen-icon.png) no-repeat;
+    right: 7px;
+    width: 6px;
+    background-size: contain; }
+    .mejs-skin .mejs-controls .mejs-fullscreen-button button {
+      display: none; } }
+  .mejs-skin .mejs-controls .mejs-caption-selector {
+    background: none; }
   .mejs-skin .mejs-controls .mejs-captions-selector {
     position: absolute;
     right: -25px; }

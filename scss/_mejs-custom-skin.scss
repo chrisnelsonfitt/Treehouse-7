@@ -9,24 +9,72 @@
             .mejs-button{
                 float:right;
                 position: absolute;
-                z-index: 2; }
+                z-index: 2;
+        }
             .mejs-playpause-button{
                 left:10px;
-                bottom:15px;
+                bottom:1px;
                 width:10px;
                 height: 10px;
                 padding:2px;
                 cursor: pointer;}
+        .mejs-play{
+            content:url('..//icons/play-icon.png');
+           
+            @include button;
+        }
+        .mejs-pause{
+            content:url('..//icons/pause-icon.png');
+            @include button;
+        }
+        .mejs-fullscreen-button{
+              content:url('..//icons/fullscreen-icon.png');
+               right:5px;
+                @include button;
+            bottom:2px;
+             }
+         .mejs-volume-button{
+                right:25px;
+                bottom:0px;
+        }
+        
+                @-moz-document url-prefix() {
+            .mejs-play{
+                @include button-m;
+                background: url(..//icons/play-icon.png) no-repeat;
+                background-size:contain;
+                width:1px;
+                button{
+                    display: none;
+                }
+            }
+           
+            .mejs-pause{
+               
+                background: url(..//icons/pause-icon.png) no-repeat;
+                width:1px;
+                background-size:contain;
+                button{display: none}
+                @include button-m;
+            }
+            .mejs-fullscreen-button{
+             background: url(..//icons/fullscreen-icon.png) no-repeat;
+
+                right:7px;
+                width:6px;
+                background-size:contain;
+                button{
+                    display: none;
+                }
+            
+        }
+
+}
+
+      
             .mejs-caption-selector {
                 background:none;}
-    
-           .mejs-fullscreen-button{
-               right:5px;
-               bottom:1px;
-               }
-            .mejs-volume-button {
-                right:25px;
-                bottom:-1px;}
+
             .mejs-captions-selector {
                 position: $ab;
                 right:-25px;    
@@ -70,6 +118,6 @@
       
     
 }
+    
 
 }
-

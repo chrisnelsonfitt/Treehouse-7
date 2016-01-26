@@ -1,15 +1,9 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
-//MediaElement.js REQUIRED  
-$('audio,video').mediaelementplayer({success: function (player, node) {  "use strict"; $('#' + node.id + '-mode').html('mode: ' + player.pluginType); },
-                                     
-        features: ["playpause", 'fullscreen', 'volume', 'current', 'duration', 'tracks', 'progress'],
-                                     startLanguage: 'en',
-        translationSelector: true,
-        alwaysShowControls: true});
 
 // Video Tag
 var video = document.getElementsByTagName("video")[0];
+
 
 //Hide and Show Buttons
 
@@ -35,3 +29,9 @@ $("#3").click(function () { "use strict"; video.currentTime = 17.940; video.play
 $("#4").click(function () { "use strict"; video.currentTime = 32.100; video.play(); });
 $("#5").click(function () { "use strict"; video.currentTime = 42.350; video.play(); });
 $("#6").click(function () { "use strict"; video.currentTime = 53.760; video.play(); });
+
+
+
+
+
+

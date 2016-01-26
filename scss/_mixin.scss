@@ -9,7 +9,21 @@
     font-weight: 600;
 }
 @mixin player-height{
-height:7px;
+    height:7px;
     border-radius: 0px;
     
+}
+@mixin button{
+             cursor: pointer;
+             width:12px;
+             height:12px;
+             padding:4px;
+             bottom:0px;
+}
+@mixin button-h{visibility: hidden;}
+@mixin button-m{
+             cursor: pointer;
+             position: absolute;
+             bottom:-2px;
+             visibility: visible;
 }
